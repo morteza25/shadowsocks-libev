@@ -1,6 +1,21 @@
 shadowsocks-libev (trying to add websocket)
 =================
 
+do all in:
+http://go.kblog.us/2012/09/setting-up-mingw64-with-cygwin.html
+put in .bash_profile instead of .profile!
+
+and run instead
+./Configure mingw64 --prefix="$HOME/prebuilt" --openssldir="$HOME/prebuilt/openssl"
+for openssl
+
+and for ss:
+./configure --prefix="$HOME/ss" --with-openssl="$HOME/prebuilt"
+
+what's tunnel mode?
+./ss-tunnel -l 53 -L 8.8.8.8:53 -c config.json -u -v
+create tunnel for google dns through your server, set dns server to localhost.
+
 Intro
 -----
 

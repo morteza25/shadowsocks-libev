@@ -23,6 +23,8 @@ debian/shadowsocks.substvars
 debian/*.debhelper*
 .dirstamp
 shadowsocks.pc
+.idea/
+.idea
 
 # Ignore garbage of OS X
 *.DS_Store

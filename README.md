@@ -12,6 +12,9 @@ for openssl
 and for ss:
 ./configure --prefix="$HOME/ss" --with-openssl="$HOME/prebuilt"
 
+for msys:
+./configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --prefix="$HOME/ss" --with-openssl="$HOME/prebuilt"
+
 what's tunnel mode?
 ./ss-tunnel -l 53 -L 8.8.8.8:53 -c config.json -u -v
 create tunnel for google dns through your server, set dns server to localhost.
